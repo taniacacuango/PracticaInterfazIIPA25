@@ -9,23 +9,14 @@ package Modelo;
  * @author Usuario
  */
 public class Cuadrado implements FiguraGeometrica{
-    private String nombre;
+
     private double lado;
 
     public Cuadrado() {
     }
 
-    public Cuadrado(String nombre, double lado) {
-        this.nombre = nombre;
+    public Cuadrado(double lado) {
         this.lado = lado;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public double getLado() {
@@ -35,6 +26,8 @@ public class Cuadrado implements FiguraGeometrica{
     public void setLado(double lado) {
         this.lado = lado;
     }
+
+    
 
     @Override
     public double calcularArea() {
@@ -50,13 +43,8 @@ public class Cuadrado implements FiguraGeometrica{
 
     @Override
     public String toString() {
-        return "CUADRADO:"+"\n"+"Nombre:"+getNombre()+"\n"
+        return "CUADRADO:"
                 +"Lado:"+getLado()+"\n";}
                 
-    public void imprimir(){
-    
-    }
-    public void imprimir(String nombre){
-    
-    }
+
 }
